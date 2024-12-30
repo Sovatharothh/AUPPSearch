@@ -7,38 +7,52 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <!-- Logo and Hamburger in one container -->
         <div class="logo-container">
             <img src="assets/images/logo.png" alt="Logo" class="logo">
             <div class="hamburger" id="toggleSidebar">&#9776;</div>
         </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search..." />
-        </div>
-    </header>
 
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-        <!-- Dashboard Menu Item -->
+        <!-- Menu Items -->
         <div class="menu-item" data-target="https://lookerstudio.google.com/u/0/reporting/a5da6efc-444b-45dd-9895-075d4a221650/page/kIV1C">
             <img src="assets/images/dashboard.png" alt="Dashboard Icon">
             <span>Dashboard</span>
         </div>
 
-        <!-- Chatbot Menu Item -->
         <div class="menu-item" data-target="https://www.duraseksa.com/home">
             <img src="assets/images/chatbot.png" alt="Chatbot Icon">
             <span>Chatbot</span>
         </div>
     </aside>
 
-    <!-- Main Content -->
-    <main class="content">
-        <iframe id="contentFrame" src="" frameborder="0" width="100%" height="100%"></iframe>
-    </main>
+    <!-- Main Layout -->
+    <div class="main-layout">
+        <!-- Header -->
+        <header>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+            </div>
+            <!-- Profile and dropdown -->
+        <div class="profile-container">
+            <img src="assets/images/people.png" alt="Profile Picture" class="profile-img" />
+            <span class="dropdown-arrow">&#9662;</span> <!-- Dropdown arrow -->
 
-    <!-- JavaScript -->
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu">
+                <div class="dropdown-option">Profile</div>
+                <div class="dropdown-option">Sign Out</div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+            <iframe id="contentFrame" src="" frameborder="0" width="100%" height="100%"></iframe>
+        </main>
+    </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
